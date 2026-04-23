@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader">
+      <p id="loader-text">Loading...</p>
+    </div>
+
+    <header>
+        <h1 id="title">Silent Swarm</h1>
+    </header>
+
+    <main>
+      <div id="bols">
+            <img src="web-assets/bols.svg" id="bols" alt="bols">
+        </div>
+
+        <section id="about-section">
+            <p class="subtitle" id="curious">If you are curious about the project, read this!</p>
+            <a href="about.html"><img src="web-assets/button-about.svg" id="button-about" alt="button-about"></a>
+        </section>
+
+        <section id="canvas-section">
+            <p class="subtitle" id="exp">But if you want to experience it right away, go there!</p>
+            <a href="p5-code/index.html"><img src="web-assets/button-canvas.svg" id="button-canvas" alt="button-canvas"></a> 
+        </section>
+
+    </main>
+    <script>
+      //loader disappear after page is loaded
+      window.addEventListener('load', function() {
+        const loader = document.getElementById('loader');
+        loader.style.display = 'none';
+      });
+    </script>
+
+</body>
+</html>

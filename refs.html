@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="stylesheet" href="style-ref.css">
+</head>
+<body>
+<div id="loader">
+      <p id="loader-text">Loading...</p>
+    </div>
+
+    <div id="pdf-container">
+        <iframe src="references.pdf" id="pdf-viewer"></iframe>
+    </div>
+
+    
+<script>
+      //loader disappear after page is loaded
+      window.addEventListener('load', function() {
+        const loader = document.getElementById('loader');
+        loader.style.display = 'none';
+      });
+    </script>
+</body>
+</html>
